@@ -67,17 +67,27 @@
   <!-- Header -->
   <section class="hero is-link is-fullheight is-fullheight-with-navbar" style="background-color: chocolate;">
     <div class="hero-body">
-      <div class="container" style="margin-left: 30px;">Hello! I am
-        <h1 class="title is-1">
-          Hegedűs Hajnalka
+      <div class="container">
+        <h2 id="type2" style="font-size: 2em;"></h2>
+        <h1 class="title is-1" id="type3" style="font-size: 4em;">
+           
         </h1>
-        <h2 class="subtitle is-3">
-          Front-end Web Developer
+
+        <h2 class="subtitle is-3" id="type" style="font-size: 3em;">
+          
         </h2>
+        
       </div>
-      <div>
-          <img style="width: auto; height: 100vh; margin-bottom: -55px;" src="net-gifmaker-unscreen.gif" alt="">
+
+      <img class="cat"src="https://media.giphy.com/media/H1jSPXCJmo8AZi3gdP/giphy.gif" alt="" >
+
+      <img  class="frame" src="https://media.giphy.com/media/cAwp32LEfpNIWz9T2p/giphy.gif" alt="" style="position: absolute; left: 50%; top: 4%; width: 650px;">
+
+      <!-- <img class="greenery-gif" src="https://media.giphy.com/media/j0RWJhlroP3b67NpCr/giphy.gif" alt="">  -->
+      <div style="background-image: url('https://media.giphy.com/media/dq8qh8olhifXGxdmTV/giphy.gif')">
+          <img class="me-gif"  src="net-gifmaker-unscreen.gif" alt="">
       </div>
+      
     </div>
   </section>
 
@@ -251,12 +261,14 @@
     <div class="section-heading" style="display: flex; flex-direction:column; align-items: center; justify-content: center;">
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">More about my past</h4>
-      <a href="#" class="button is-link is-medium" style="background-color: chocolate;">
+      
+      <a href="Hegedűs_Hajnalka_CV.pdf" download="Hegedűs_Hajnalka_CV" class="button is-link is-medium" style="background-color: chocolate;">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
         <span>Download My Resume</span>
       </a>
+      
     </div>
   </section>
 
@@ -712,13 +724,52 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" style="background-color: chocolate; color: white; display: flex; flex-direction: column; align-items: center;">
     <div class="section-heading">
       <p> The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        <a href="http://opensource.org/licenses/mit-license.php" style="color: white;">MIT</a>.
       </p>
     </div>
   </footer>
+
+ <script type="text/javascript">
+  var i =0, text;
+  text = "Frontend developer "
+
+  function typing(){
+    if(i<text.length){
+      document.getElementById('type').textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, 100);
+    }
+  }
+
+  var j =0, text2;
+  text2 = "Hello!"
+
+  function typing2(){
+    if(j<text2.length){
+      document.getElementById('type2').textContent += text2.charAt(j);
+      j++;
+      setTimeout(typing2, 100);
+    }
+  }
+
+  var k =0, text3;
+  text3 = "I'm Hajnalka"
+
+  function typing3(){
+    if(j<text2.length){
+      document.getElementById('type3').textContent += text3.charAt(k);
+      k++;
+      setTimeout(typing3, 100);
+    }
+  }
+
+  setTimeout(typing2, 1000);
+  setTimeout(typing3, 300);
+  setTimeout(typing, 3000);
+ </script>
 </body>
 
 </html>
