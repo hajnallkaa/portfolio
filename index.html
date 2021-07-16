@@ -10,6 +10,7 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="../css/personal.css">
@@ -19,7 +20,7 @@
 
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top" style="background-color: black;">
+  <nav class="navbar is-link is-fixed-top"  style="background-color: black;" data-aos="fade-down">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -65,11 +66,11 @@
   </nav>
 
   <!-- Header -->
-  <section class="hero is-link is-fullheight is-fullheight-with-navbar" style="background-color: chocolate;">
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar" style="background-color: chocolate; background-image: url('Vorderrhein.svg');">
     <div class="hero-body">
       <div class="container">
-        <h2 id="type2" style="font-size: 2em;"></h2>
-        <h1 class="title is-1" id="type3" style="font-size: 4em;">
+        
+        <h1 class="title is-1" id="type3" style="font-size: 4em; " >
            
         </h1>
 
@@ -79,12 +80,12 @@
         
       </div>
 
-      <img class="cat"src="https://media.giphy.com/media/H1jSPXCJmo8AZi3gdP/giphy.gif" alt="" >
+      <img class="cat"src="https://media.giphy.com/media/H1jSPXCJmo8AZi3gdP/giphy.gif" alt="" data-aos="fade-right" data-aos-delay="1400" >
 
-      <img  class="frame" src="https://media.giphy.com/media/cAwp32LEfpNIWz9T2p/giphy.gif" alt="" style="position: absolute; left: 50%; top: 4%; width: 650px;">
+      
 
       <!-- <img class="greenery-gif" src="https://media.giphy.com/media/j0RWJhlroP3b67NpCr/giphy.gif" alt="">  -->
-      <div style="background-image: url('https://media.giphy.com/media/dq8qh8olhifXGxdmTV/giphy.gif')">
+      <div >
           <img class="me-gif"  src="net-gifmaker-unscreen.gif" alt="">
       </div>
       
@@ -92,9 +93,9 @@
   </section>
 
   <!-- About -->
-  <section class="section" id="about">
+  <section class="section" id="about"  >
     <!-- Title -->
-    <div class="section-heading" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 80px ; background-color: white; padding: 20px;">
+    <div class="section-heading" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 80px ; background-color: white; padding: 20px;" data-aos="fade-down">
       <h3 class="title is-2 " >About Me</h3>
       <h4 class="subtitle is-5" >Jack of all trades, master of "some"</h4>
       <div class="container" >
@@ -110,7 +111,7 @@
     <div class="columns has-same-height ">
       <div class="column">
         <!-- Profile -->
-        <div class="card">
+        <div class="card" data-aos="fade-right">
           <div class="card-content">
             <h3 class="title is-4">Profile</h3>
 
@@ -146,7 +147,7 @@
      
       <div class="column">
         <!-- Skills -->
-        <div class="card">
+        <div class="card" data-aos="fade-left">
           <div class="card-content skills-content">
             <h3 class="title is-4">Skills</h3>
             <div class="content">
@@ -220,11 +221,11 @@
   <!-- Skills tags -->
   
         <div class="tags custom-tags" style="display: flex; align-items: center; justify-content: center; margin-top: 15px;">
-          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
-            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
-            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
-            class="tag is-light">jQuery</span><span class="tag is-light">Tailwind</span><span
-            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Git</span><span class="tag is-light">Chrome Extensions</span>
+          <span class="tag is-dark">Node.js</span><span class="tag is-dark">Express.js</span><span class="tag is-dark">VueJS</span><span
+            class="tag is-dark">JavaScript</span><span class="tag is-dark">HTML5</span><span class="tag is-dark">Canvas</span><span
+            class="tag is-dark">CSS3</span><span class="tag is-dark">Bulma</span><span class="tag is-dark">Bootstrap</span><span
+            class="tag is-dark">jQuery</span><span class="tag is-dark">Tailwind</span><span
+            class="tag is-dark">SASS/SCSS</span><span class="tag is-dark">Git</span><span class="tag is-dark">Chrome Extensions</span>
         </div> 
 
   <!-- Services -->
@@ -235,7 +236,7 @@
     </div>
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column"  data-aos="flip-left">
           <div class="box">
             <div class="content">
               <h4 class="title is-5">Front End Web Development</h4>
@@ -244,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="column"  data-aos="flip-right">
           <div class="box">
             <div class="content">
               <h4 class="title is-5">Graphic design</h4>
@@ -262,7 +263,7 @@
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">More about my past</h4>
       
-      <a href="Hegedűs_Hajnalka_CV.pdf" download="Hegedűs_Hajnalka_CV" class="button is-link is-medium" style="background-color: chocolate;">
+      <a href="Hegedűs_Hajnalka_CV.pdf" download="Hegedűs_Hajnalka_CV" class="button is-link is-medium" style="background-color: chocolate;" data-aos="zoom-in">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
@@ -280,11 +281,11 @@
       </div>
       <br>
 
-      <div class="container portfolio-container">
+      <div class="container portfolio-container" >
         <div class="columns">
           <div class="column is-4">
             <!-- admin -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="100">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Admin <small>(Light)</small></span>
@@ -309,7 +310,7 @@
               </footer>
             </div>
             <!-- cards -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="200">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Cards</span>
@@ -334,7 +335,7 @@
               </footer>
             </div>
             <!-- forum -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="300">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Forum</span>
@@ -359,7 +360,7 @@
               </footer>
             </div>
             <!-- insta album -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="400">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>InstaAlbum</span>
@@ -384,7 +385,7 @@
               </footer>
             </div>
             <!-- landing -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="500">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Landing</span>
@@ -412,7 +413,7 @@
           </div>
           <div class="column is-4">
             <!-- band -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="200">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Band</span>
@@ -437,7 +438,7 @@
               </footer>
             </div>
             <!-- cheatsheet -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="300">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Cheatsheet</span>
@@ -462,7 +463,7 @@
               </footer>
             </div>
             <!-- hero -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="400">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Hero</span>
@@ -487,7 +488,7 @@
               </footer>
             </div>
             <!--kanban -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="500">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Kanban</span>
@@ -512,7 +513,7 @@
               </footer>
             </div>
             <!-- login -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="600">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Login</span>
@@ -539,7 +540,7 @@
           </div>
           <div class="column is-4">
             <!-- blog -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="300">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Blog</span>
@@ -564,7 +565,7 @@
               </footer>
             </div>
             <!-- cover -->
-            <div class="card">
+            <div class="card"data-aos="flip-up" data-aos-delay="400">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Cover</span>
@@ -589,7 +590,7 @@
               </footer>
             </div>
             <!--inbox -->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="600">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Inbox</span>
@@ -614,7 +615,7 @@
               </footer>
             </div>
             <!--kanban with functional search-->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="700">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Kanban with Search box</span>
@@ -639,7 +640,7 @@
               </footer>
             </div>
             <!--tabs-->
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-delay="800">
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Modal Cards</span>
@@ -673,7 +674,7 @@
 
   <!-- Contact -->
   <section class="section" id="contact" >
-    <div class="container">
+    <div class="container"data-aos="zoom-in-up">
       
 
       <div class="columns">
@@ -739,37 +740,47 @@
   function typing(){
     if(i<text.length){
       document.getElementById('type').textContent += text.charAt(i);
+      document.getElementById('type').style.background = 'black';
+      document.getElementById('type').style.padding = '20px';
+      document.getElementById('type').style.width = '500px';
       i++;
       setTimeout(typing, 100);
     }
   }
 
-  var j =0, text2;
-  text2 = "Hello!"
+ 
 
-  function typing2(){
-    if(j<text2.length){
-      document.getElementById('type2').textContent += text2.charAt(j);
-      j++;
-      setTimeout(typing2, 100);
-    }
-  }
-
-  var k =0, text3;
+  var j =0, text3;
   text3 = "I'm Hajnalka"
 
   function typing3(){
-    if(j<text2.length){
-      document.getElementById('type3').textContent += text3.charAt(k);
-      k++;
+    if(j<text3.length){
+      document.getElementById('type3').textContent += text3.charAt(j);
+      document.getElementById('type3').style.background = 'black';
+      document.getElementById('type3').style.padding = '20px';
+      document.getElementById('type3').style.width = '500px';
+      j++;
       setTimeout(typing3, 100);
     }
   }
 
-  setTimeout(typing2, 1000);
-  setTimeout(typing3, 300);
-  setTimeout(typing, 3000);
+  
+  typing3();
+  typing();
  </script>
+
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     delay:200,
+     duration: 1500,
+     once:false,
+     mirror: false,
+   });
+ </script>
+ 
+
 </body>
 
 </html>
