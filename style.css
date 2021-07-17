@@ -58,16 +58,21 @@ background-attachment: fixed;
     background-image: url('Pattern.png');
 }
 
-@media screen and (max-width: 1300px) {
-     .me-gif, .frame{
-      display: none;
-    }
+@media screen and (max-width: 1000px) {
+     .me-gif{
+         width: 327px;
+         height: auto;
+         position: absolute;
+         top: 34%;
+         left: 50%;
+     }
 
-    .cat{
-        display: block;
-    }
-
+     .container h1{
+         position: absolute;
+         top:-170%;
+     }
     .container{
         margin-bottom: 45px;
+        margin-left: -25px;
     }
   }
