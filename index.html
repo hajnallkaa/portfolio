@@ -20,7 +20,7 @@
 
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top"  style="background-color: black;" data-aos="fade-down">
+  <nav class="navbar is-link is-fixed-top" id="navbar"  style="background-color: black;" data-aos="fade-down">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -67,7 +67,7 @@
 
   <!-- Header -->
   <section class="hero is-link is-fullheight is-fullheight-with-navbar" style="background-color: chocolate; background-image: url('Background1.png');
-   background-repeat: repeat;">
+   ">
     <div class="hero-body">
       <div class="container">
         
@@ -278,7 +278,7 @@
   <section class="section" id="portfolio" style="background: #364547;">
     <div class="container" >
       <div class="section-heading" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <h3 class="title is-2" style="width:500px; background:rgb(0, 0, 0); color: white; padding: 10px; display: flex; align-items: center; justify-content: center;">Portfolio</h3>
+        <h3 class="title is-2" id="portfolio">Portfolio</h3>
       </div>
       <br>
 
@@ -745,9 +745,6 @@
   function typing(){
     if(i<text.length){
       document.getElementById('type').textContent += text.charAt(i);
-      document.getElementById('type').style.background = 'black';
-      document.getElementById('type').style.padding = '20px';
-      document.getElementById('type').style.width = '500px';
       i++;
       setTimeout(typing, 100);
     }
@@ -761,9 +758,6 @@
   function typing3(){
     if(j<text3.length){
       document.getElementById('type3').textContent += text3.charAt(j);
-      document.getElementById('type3').style.background = 'black';
-      document.getElementById('type3').style.padding = '20px';
-      document.getElementById('type3').style.width = '500px';
       j++;
       setTimeout(typing3, 100);
     }
