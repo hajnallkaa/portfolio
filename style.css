@@ -45,15 +45,11 @@ background-attachment: fixed;
     background-image: url('Pattern.png');
 }
 
-#portfolio{
-    width:500px; 
-    background:rgb(0, 0, 0); 
+ #portfolio{
+    
     color: white; 
-    padding: 10px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
+    
+} 
 
 @media screen and (max-width: 1000px) {
      .me-gif{
@@ -62,18 +58,14 @@ background-attachment: fixed;
 
      #type3{
          font-size: 2em !important;
-         width: 280px;
+         width: 300px;
      }
 
      #type{
          font-size: 30px !important;
-         width: 280px;
+         width: 300px;
      }
 
-     #portfolio{
-         width: 300px;
-         font-size: 1em;
-     }
 
      #navbar{
          width: 100vw !important;
