@@ -12,8 +12,8 @@ body{
     /* height: 42vh;  */
 }
 
-#type, #type3{
-    width: 500px;
+#type {
+    width: 600px;
     padding: 20px;
     margin: 0;
     background: black;
@@ -47,9 +47,7 @@ background-attachment: fixed;
 }
 
  #portfolio{
-    
-    color: white; 
-    
+     color: white;    
 } 
 /* width */
 ::-webkit-scrollbar {
@@ -76,7 +74,7 @@ background-attachment: fixed;
     background: #000000;
   }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
      .me-gif{
          display: none;
      }
