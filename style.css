@@ -34,6 +34,27 @@ body{
     z-index: 20;
 }
 
+.X{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.X:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c"; /* use the hex value here... */
+    font-size: 20px; 
+    color: #FFF;
+    background-color: black;
+    line-height: 50px;
+    text-align: center;
+}
+
 
 
 #about{

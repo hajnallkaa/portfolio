@@ -20,46 +20,51 @@
 
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top" id="navbar"  style="background-color: black;" data-aos="fade-down">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
+  <nav class="navbar is-link is-fixed-top"    style="background-color: black;" data-aos="fade-down">
+     <div class="navbar-brand" >
+      <div class="navbar-burger burger" onclick="removeClass()"  data-target="navbarExampleTransparentExample">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
       </div>
-    </div>
+    </div> 
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div id="navbarExampleTransparentExample" class="navbar-menu" >
       <div class="navbar-end">
-        <a class="navbar-item" href="#about">
+        <a class="navbar-item" href="#about" onmouseover="this.style.backgroundColor='chocolate';" 
+        onmouseout="this.style.backgroundColor='black';">
           <span class="icon">
-            <i class="fas fa-info"></i>
+            <i style="color: white;" class="fas fa-info"></i>
           </span>
-          <span>About</span>
+          <span style="color: white;">About</span>
         </a>
-        <a class="navbar-item" href="#services">
+        <a class="navbar-item" href="#services" onmouseover="this.style.backgroundColor='chocolate';" 
+        onmouseout="this.style.backgroundColor='black';">
           <span class="icon">
-            <i class="fas fa-bars"></i>
+            <i style="color: white;" class="fas fa-bars"></i>
           </span>
-          <span>Services</span>
+          <span style="color: white;" >Services</span>
         </a>
-        <a class="navbar-item" href="#resume">
+        <a class="navbar-item" href="#resume" onmouseover="this.style.backgroundColor='chocolate';" 
+        onmouseout="this.style.backgroundColor='black';">
           <span class="icon">
-            <i class="fas fa-file-alt"></i>
+            <i style="color: white;" class="fas fa-file-alt"></i>
           </span>
-          <span>Resume</span>
+          <span style="color: white;" >Resume</span>
         </a>
-        <a class="navbar-item" href="#portfolio">
+        <a class="navbar-item" href="#portfolio" onmouseover="this.style.backgroundColor='chocolate';" 
+        onmouseout="this.style.backgroundColor='black';">
           <span class="icon">
-            <i class="fas fa-th-list"></i>
+            <i style="color: white;" class="fas fa-th-list"></i>
           </span>
-          <span>Portfolio</span>
+          <span style="color: white;" >Portfolio</span>
         </a>
-        <a class="navbar-item" href="#contact">
+        <a class="navbar-item" href="#contact" onmouseover="this.style.backgroundColor='chocolate';" 
+        onmouseout="this.style.backgroundColor='black';">
           <span class="icon">
-            <i class="fas fa-envelope"></i>
+            <i style="color: white;" class="fas fa-envelope"></i>
           </span>
-          <span>Contact</span>
+          <span style="color: white;" >Contact</span>
         </a>
       </div>
     </div>
@@ -95,9 +100,17 @@
     <!-- Title -->
     <div class="section-heading" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 80px ; background-color: #F0E3CA ; padding: 20px;" data-aos="fade-down">
       <h3 class="title is-2 " >About Me</h3>
-      <h4 class="subtitle is-5" >Subtitle</h4>
+      
       <div class="container">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora inventore, reprehenderit, mollitia dolore non enim autem consequuntur at nisi, suscipit doloremque eaque! Voluptatibus minus provident ea saepe dolorem similique dolor.</p>
+        <p>As a graphic designer, I design
+          logos, posters, invitations, websites
+          for companies and individuals.
+          Currently, I've finished a front-end
+          development course, because I
+          would like to be a professional web
+          developer. I have an art history
+          degree, and a cultural event
+          orginazer certificate as well.</p>
       </div>
     </div>
 
@@ -638,6 +651,7 @@
 
 
   <!-- Contact -->
+  <form action="mailto:hajnallkaa@gmail.com" >
   <section class="section" id="contact" >
     <div class="container"data-aos="zoom-in-up">
       
@@ -688,6 +702,7 @@
 
     </div>
   </section>
+  </form>
 
   <!-- Footer -->
   <footer class="footer" style="background-color: chocolate; color: white; display: flex; flex-direction: column; align-items: center;">
@@ -697,8 +712,8 @@
       </p>
     </div>
     <div  style="display:table-row">
-      <img  style="display:table-column" src="hajni_favicon.png"/>
-      <span style="display:table-cell">Hajnalka design</span>
+      <img  style="display:inline" src="hajni_favicon.png"/>
+      <span >Hajnalka design</span>
   </div>
   </footer>
 
@@ -716,6 +731,20 @@
      mirror: false,
    });
  </script>
+
+<script>
+   function animationX(){
+    document.getElementsByClassName('navbar-burger')[0].classList.toggle('X');
+  }
+  
+  function removeClass(){
+    document.getElementById("navbarExampleTransparentExample").classList.toggle('navbar-menu');
+    animationX()
+  }
+</script>
+
+
+ 
  
 
 </body>
