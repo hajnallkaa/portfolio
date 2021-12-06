@@ -59,19 +59,13 @@
           </span>
           <span style="color: white;" >Portfolio</span>
         </a>
-        <a class="navbar-item" href="#contact" onmouseover="this.style.backgroundColor='chocolate';" 
-        onmouseout="this.style.backgroundColor='black';">
-          <span class="icon">
-            <i style="color: white;" class="fas fa-envelope"></i>
-          </span>
-          <span style="color: white;" >Contact</span>
-        </a>
+        
       </div>
     </div>
   </nav>
 
   <!-- Header -->
-  <section class="hero is-link is-fullheight is-fullheight-with-navbar" style="background-color: chocolate; background-image: url('Background1.png');
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar" style="background-color: #eed7b7; background-image: url('Background1.png');
    ">
     <div class="hero-body">
       <div class="container">
@@ -210,7 +204,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Bootstrap</strong>
+                      <strong>Typescript</strong>
                       <br>
                       <progress class="progress " value="66" max="100"></progress>
                     </p>
@@ -232,6 +226,8 @@
             class="tag is-dark">CSS3</span><span class="tag is-dark">Bulma</span><span class="tag is-dark">Bootstrap</span><span
             class="tag is-dark">jQuery</span><span class="tag is-dark">Tailwind</span><span
             class="tag is-dark">SASS/SCSS</span><span class="tag is-dark">Git</span><span class="tag is-dark">Chrome Extensions</span>
+            <span class="tag is-dark">MongoDB</span><span class="tag is-dark">Typescript</span><span class="tag is-dark">GraphQL</span>
+            <span class="tag is-dark">Apollo</span>
         </div> 
 
   <!-- Services -->
@@ -269,7 +265,7 @@
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">More about my past</h4>
       
-      <a href="Hegedűs_Hajnalka_CV.pdf" download="Hegedűs_Hajnalka_CV" class="button is-link is-medium" style="background-color: chocolate;" data-aos="zoom-in">
+      <a href="Méry_Hajnalka_CV_SAJÁT.pdf" download="Méry Hajnalka_CV" class="button is-link is-medium" style="background-color: chocolate;" data-aos="zoom-in">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
@@ -290,6 +286,24 @@
       <div class="container portfolio-container" >
         <div class="columns">
           <div class="column is-4">
+            <!-- Travel Website with React-->
+            <div class="card" data-aos="flip-up" data-aos-delay="100">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Travel Website</span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./portfolio_kepek/TravelWebsite.png" alt="Animated Page">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://clever-yalow-a9484b.netlify.app/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/hajnallkaa/React-Travel-Website" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
             <!-- Animated Template -->
             <div class="card" data-aos="flip-up" data-aos-delay="100">
               <header class="card-header">
@@ -449,7 +463,25 @@
             </div>
 
           </div>
+          <!-- Budget App -->
           <div class="column is-4">
+            <div class="card" data-aos="flip-up" data-aos-delay="100">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Budget App </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="portfolio_kepek/BudgetApp.png" alt="Budget App">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://github.com/hajnallkaa/budgetapp-apolloclient" class="card-footer-item">Preview</a>
+                <a href="https://github.com/hajnallkaa/budgetapp-apolloclient" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
             <!-- Music Player -->
             <div class="card" data-aos="flip-up" data-aos-delay="200">
               <header class="card-header">
@@ -602,8 +634,25 @@
               </footer>
             </div>
           </div>
-          
+          <!-- Soon -->
           <div class="column is-4">
+            <div class="card" data-aos="flip-up" data-aos-delay="100">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>New Poject</span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./portfolio_kepek/soon.jpg" alt="Soon">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="" class="card-footer-item">Preview</a>
+                <a href="" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
             <!-- Rock, Paper, Scissors game -->
             <div class="card" data-aos="flip-up" data-aos-delay="300">
               <header class="card-header">
@@ -763,60 +812,10 @@
   </section>
 
 
+  
 
-  <!-- Contact -->
-  <form action="mailto:hajnallkaa@gmail.com" >
-  <section class="section" id="contact" >
-    <div class="container"data-aos="zoom-in-up">
-      
 
-      <div class="columns">
-        
-        <div class="column is-6 is-offset-3">
-          <div class="box">
-            <div class="section-heading" style="display: flex; flex-direction: column; align-items: center;">
-              <h3 class="title is-2" >Contact</h3>
-            </div>
-            <br>
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Text input">
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email input" value="">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-              </div>
-            </div>
-
-            <div class="field is-grouped has-text-centered" style="display: flex; flex-direction: column;">
-              <div class="control">
-                <button class="button is-link is-large" style="background-color: chocolate;"><span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>Submit</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  </form>
+         
 
   <!-- Footer -->
   <footer class="footer" style="background-color: chocolate; color: white; display: flex; flex-direction: column; align-items: center;">
